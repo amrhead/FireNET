@@ -1,0 +1,144 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CryModule", "CryModule\CryModule.vcxproj", "{548EC581-832C-4E08-B202-A839DE3FFC3B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3A820785-DED1-44BF-A48D-959AADCE690F} = {3A820785-DED1-44BF-A48D-959AADCE690F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MasterServer", "MasterServer\MasterServer.vcxproj", "{3A820785-DED1-44BF-A48D-959AADCE690F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{FCD96B9F-3EE2-47F3-AC6A-006DA08E4CDA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleClient", "Tools\SimpleClient\SimpleClient.vcxproj", "{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StressTest", "Tools\StressTest\StressTest.vcxproj", "{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		[CryModule - 3.6.+] Debug_Dedicated|Win32 = [CryModule - 3.6.+] Debug_Dedicated|Win32
+		[CryModule - 3.6.+] Debug_Dedicated|x64 = [CryModule - 3.6.+] Debug_Dedicated|x64
+		[CryModule - 3.6.+] Debug|Win32 = [CryModule - 3.6.+] Debug|Win32
+		[CryModule - 3.6.+] Debug|x64 = [CryModule - 3.6.+] Debug|x64
+		[CryModule - 3.7.0] Debug_Dedicated|Win32 = [CryModule - 3.7.0] Debug_Dedicated|Win32
+		[CryModule - 3.7.0] Debug_Dedicated|x64 = [CryModule - 3.7.0] Debug_Dedicated|x64
+		[CryModule - 3.7.0] Debug|Win32 = [CryModule - 3.7.0] Debug|Win32
+		[CryModule - 3.7.0] Debug|x64 = [CryModule - 3.7.0] Debug|x64
+		[CryModule - 3.8.+] Debug_Dedicated|Win32 = [CryModule - 3.8.+] Debug_Dedicated|Win32
+		[CryModule - 3.8.+] Debug_Dedicated|x64 = [CryModule - 3.8.+] Debug_Dedicated|x64
+		[CryModule - 3.8.+] Debug|Win32 = [CryModule - 3.8.+] Debug|Win32
+		[CryModule - 3.8.+] Debug|x64 = [CryModule - 3.8.+] Debug|x64
+		[MasterServer] Debug|Win32 = [MasterServer] Debug|Win32
+		[MasterServer] Debug|x64 = [MasterServer] Debug|x64
+		[MasterServer] Release|Win32 = [MasterServer] Release|Win32
+		[MasterServer] Release|x64 = [MasterServer] Release|x64
+		[Tools] Debug|Win32 = [Tools] Debug|Win32
+		[Tools] Debug|x64 = [Tools] Debug|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.6.+] Debug_Dedicated|Win32.ActiveCfg = Debug_Dedicated [3.6.+]|Win32
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.6.+] Debug_Dedicated|Win32.Build.0 = Debug_Dedicated [3.6.+]|Win32
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.6.+] Debug_Dedicated|x64.ActiveCfg = Debug_Dedicated [3.6.+]|x64
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.6.+] Debug_Dedicated|x64.Build.0 = Debug_Dedicated [3.6.+]|x64
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.6.+] Debug|Win32.ActiveCfg = Debug [3.6.+]|Win32
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.6.+] Debug|Win32.Build.0 = Debug [3.6.+]|Win32
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.6.+] Debug|x64.ActiveCfg = Debug [3.6.+]|x64
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.6.+] Debug|x64.Build.0 = Debug [3.6.+]|x64
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.7.0] Debug_Dedicated|Win32.ActiveCfg = Debug_Dedicated [3.7.0]|Win32
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.7.0] Debug_Dedicated|Win32.Build.0 = Debug_Dedicated [3.7.0]|Win32
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.7.0] Debug_Dedicated|x64.ActiveCfg = Debug_Dedicated [3.7.0]|x64
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.7.0] Debug_Dedicated|x64.Build.0 = Debug_Dedicated [3.7.0]|x64
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.7.0] Debug|Win32.ActiveCfg = Debug [3.7.0]|Win32
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.7.0] Debug|Win32.Build.0 = Debug [3.7.0]|Win32
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.7.0] Debug|x64.ActiveCfg = Debug [3.7.0]|x64
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.7.0] Debug|x64.Build.0 = Debug [3.7.0]|x64
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.8.+] Debug_Dedicated|Win32.ActiveCfg = Debug_Dedicated [3.8.+]|Win32
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.8.+] Debug_Dedicated|Win32.Build.0 = Debug_Dedicated [3.8.+]|Win32
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.8.+] Debug_Dedicated|x64.ActiveCfg = Debug_Dedicated [3.8.+]|x64
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.8.+] Debug_Dedicated|x64.Build.0 = Debug_Dedicated [3.8.+]|x64
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.8.+] Debug|Win32.ActiveCfg = Debug [3.8.+]|Win32
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.8.+] Debug|Win32.Build.0 = Debug [3.8.+]|Win32
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.8.+] Debug|x64.ActiveCfg = Debug [3.8.+]|x64
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[CryModule - 3.8.+] Debug|x64.Build.0 = Debug [3.8.+]|x64
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[MasterServer] Debug|Win32.ActiveCfg = Debug [3.6.+]|Win32
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[MasterServer] Debug|x64.ActiveCfg = Debug [3.6.+]|x64
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[MasterServer] Release|Win32.ActiveCfg = Debug [3.6.+]|Win32
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[MasterServer] Release|x64.ActiveCfg = Debug [3.6.+]|x64
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[Tools] Debug|Win32.ActiveCfg = Debug [3.8.+]|Win32
+		{548EC581-832C-4E08-B202-A839DE3FFC3B}.[Tools] Debug|x64.ActiveCfg = Debug [3.8.+]|x64
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[CryModule - 3.6.+] Debug_Dedicated|Win32.ActiveCfg = Debug|Win32
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[CryModule - 3.6.+] Debug_Dedicated|x64.ActiveCfg = Debug|x64
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[CryModule - 3.6.+] Debug|Win32.ActiveCfg = Debug|Win32
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[CryModule - 3.6.+] Debug|x64.ActiveCfg = Debug|x64
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[CryModule - 3.7.0] Debug_Dedicated|Win32.ActiveCfg = Debug|Win32
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[CryModule - 3.7.0] Debug_Dedicated|x64.ActiveCfg = Debug|x64
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[CryModule - 3.7.0] Debug|Win32.ActiveCfg = Debug|Win32
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[CryModule - 3.7.0] Debug|x64.ActiveCfg = Debug|x64
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[CryModule - 3.8.+] Debug_Dedicated|Win32.ActiveCfg = Debug|Win32
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[CryModule - 3.8.+] Debug_Dedicated|x64.ActiveCfg = Debug|x64
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[CryModule - 3.8.+] Debug|Win32.ActiveCfg = Debug|Win32
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[CryModule - 3.8.+] Debug|x64.ActiveCfg = Debug|x64
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[MasterServer] Debug|Win32.ActiveCfg = Debug|Win32
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[MasterServer] Debug|Win32.Build.0 = Debug|Win32
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[MasterServer] Debug|x64.ActiveCfg = Debug|x64
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[MasterServer] Debug|x64.Build.0 = Debug|x64
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[MasterServer] Release|Win32.ActiveCfg = Release|Win32
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[MasterServer] Release|Win32.Build.0 = Release|Win32
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[MasterServer] Release|x64.ActiveCfg = Release|x64
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[MasterServer] Release|x64.Build.0 = Release|x64
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[Tools] Debug|Win32.ActiveCfg = Debug|Win32
+		{3A820785-DED1-44BF-A48D-959AADCE690F}.[Tools] Debug|x64.ActiveCfg = Debug|x64
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[CryModule - 3.6.+] Debug_Dedicated|Win32.ActiveCfg = Debug|Win32
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[CryModule - 3.6.+] Debug_Dedicated|x64.ActiveCfg = Debug|x64
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[CryModule - 3.6.+] Debug_Dedicated|x64.Build.0 = Debug|x64
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[CryModule - 3.6.+] Debug|Win32.ActiveCfg = Debug|Win32
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[CryModule - 3.6.+] Debug|x64.ActiveCfg = Debug|x64
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[CryModule - 3.7.0] Debug_Dedicated|Win32.ActiveCfg = Debug|Win32
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[CryModule - 3.7.0] Debug_Dedicated|x64.ActiveCfg = Debug|x64
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[CryModule - 3.7.0] Debug|Win32.ActiveCfg = Debug|Win32
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[CryModule - 3.7.0] Debug|x64.ActiveCfg = Debug|x64
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[CryModule - 3.8.+] Debug_Dedicated|Win32.ActiveCfg = Debug|Win32
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[CryModule - 3.8.+] Debug_Dedicated|x64.ActiveCfg = Debug|x64
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[CryModule - 3.8.+] Debug|Win32.ActiveCfg = Debug|Win32
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[CryModule - 3.8.+] Debug|x64.ActiveCfg = Debug|x64
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[MasterServer] Debug|Win32.ActiveCfg = Debug|Win32
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[MasterServer] Debug|x64.ActiveCfg = Debug|x64
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[MasterServer] Release|Win32.ActiveCfg = Debug|Win32
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[MasterServer] Release|Win32.Build.0 = Debug|Win32
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[MasterServer] Release|x64.ActiveCfg = Debug|x64
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[MasterServer] Release|x64.Build.0 = Debug|x64
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[Tools] Debug|Win32.ActiveCfg = Debug|Win32
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[Tools] Debug|Win32.Build.0 = Debug|Win32
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[Tools] Debug|x64.ActiveCfg = Debug|x64
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79}.[Tools] Debug|x64.Build.0 = Debug|x64
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[CryModule - 3.6.+] Debug_Dedicated|Win32.ActiveCfg = Debug|Win32
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[CryModule - 3.6.+] Debug_Dedicated|x64.ActiveCfg = Debug|x64
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[CryModule - 3.6.+] Debug|Win32.ActiveCfg = Debug|Win32
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[CryModule - 3.6.+] Debug|x64.ActiveCfg = Debug|x64
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[CryModule - 3.7.0] Debug_Dedicated|Win32.ActiveCfg = Debug|Win32
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[CryModule - 3.7.0] Debug_Dedicated|x64.ActiveCfg = Debug|x64
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[CryModule - 3.7.0] Debug|Win32.ActiveCfg = Debug|Win32
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[CryModule - 3.7.0] Debug|x64.ActiveCfg = Debug|x64
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[CryModule - 3.8.+] Debug_Dedicated|Win32.ActiveCfg = Debug|Win32
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[CryModule - 3.8.+] Debug_Dedicated|x64.ActiveCfg = Debug|x64
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[CryModule - 3.8.+] Debug|Win32.ActiveCfg = Debug|Win32
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[CryModule - 3.8.+] Debug|x64.ActiveCfg = Debug|x64
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[MasterServer] Debug|Win32.ActiveCfg = Debug|Win32
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[MasterServer] Debug|x64.ActiveCfg = Debug|x64
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[MasterServer] Release|Win32.ActiveCfg = Debug|Win32
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[MasterServer] Release|Win32.Build.0 = Debug|Win32
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[MasterServer] Release|x64.ActiveCfg = Debug|x64
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[MasterServer] Release|x64.Build.0 = Debug|x64
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[Tools] Debug|Win32.ActiveCfg = Debug|Win32
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[Tools] Debug|Win32.Build.0 = Debug|Win32
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[Tools] Debug|x64.ActiveCfg = Debug|x64
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE}.[Tools] Debug|x64.Build.0 = Debug|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6717ACFF-1AB9-46A4-A2BD-42D2A80DFF79} = {FCD96B9F-3EE2-47F3-AC6A-006DA08E4CDA}
+		{1A3AD8C9-EC22-40A2-BAA1-7289157836AE} = {FCD96B9F-3EE2-47F3-AC6A-006DA08E4CDA}
+	EndGlobalSection
+EndGlobal

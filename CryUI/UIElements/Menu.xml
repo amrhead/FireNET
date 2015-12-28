@@ -1,0 +1,120 @@
+<UIElements name="Menu">
+
+<UIElement name="Menu" mouseevents="1" keyevents="1" cursor="1" controller_input="1">
+    
+    <GFx file="Textures\Menu.gfx" layer="1" alpha="0">
+      <Constraints>
+         <Align mode="fullscreen" valign="center" halign="center" scale="1" max="0" />
+      </Constraints>
+    </GFx>
+	
+<events>
+
+     <event name="LoginBtnPress" fscommand="loginBtnPress">
+     <param name="Login" desc="User input login"/>
+     <param name="Password" desc="User input password"/>
+     </event>
+	 
+	 <event name="RegBtnPress" fscommand="regBtnPress">
+     <param name="Login" desc="User input login"/>
+	 <param name="Nickname" desc="User input nickname"/>
+     <param name="Password" desc="User input password"/>
+     </event>
+	 
+	 <event name="SendGlobalChatMsg" fscommand="sendGlobalChatMsg">
+     <param name="Message" desc="Global chat message"/>
+     </event>
+		 
+	 <event name="CloseBtnPress" fscommand="closeBtnPress"/> 
+	 <event name="RefreshBtnPress" fscommand="refreshBtnPress"/>
+	 
+	 <event name="ConnectToServer" fscommand="connectToServer">
+     <param name="id" desc="Server id"/>
+     </event>
+	 
+</events>
+
+<functions>
+
+<!-- Login page -->
+<function name="ShowLoginPage" funcname="ShowLoginPage"/>
+<function name="HideLoginPage" funcname="HideLoginPage"/>
+
+<function name="ShowLoginResult" funcname="ShowLoginResult">
+      <param name="Result" desc="Result" type="string"/>
+</function>
+<function name="HideLoginResult" funcname="HideLoginResult"/>
+
+<!-- Register page -->
+<function name="ShowRegPage" funcname="ShowRegPage"/>
+<function name="HideRegPage" funcname="HideRegPage"/>
+
+<function name="ShowRegisterResult" funcname="ShowRegisterResult">
+      <param name="Result" desc="Result" type="string"/>
+</function>
+<function name="HideRegisterResult" funcname="HideRegisterResult"/>
+
+<!-- Global chat -->
+<function name="ShowGlobalChat" funcname="ShowGlobalChat"/>
+<function name="HideGlobalChat" funcname="HideGlobalChat"/>
+<function name="UpdateGlobalChat" funcname="UpdateGlobalChat">
+      <param name="Message" desc="Message" type="string"/>
+</function>
+
+<!-- Server list -->
+<function name="ShowServerList" funcname="ShowServerList"/>
+<function name="HideServerList" funcname="HideServerList"/>
+
+<function name="UpdateOrAddServer" funcname="UpdateOrAddServer">
+      <param name="ServerId" desc="Server id" type="int"/>
+	  <param name="ServerIP" desc="Server ip" type="string"/>
+	  <param name="ServerPort" desc="Server port" type="int"/>
+	  <param name="ServerName" desc="Server name" type="string"/>
+	  <param name="PlayersInServer" desc="Players ammount in server" type="string"/>
+	  <param name="MapName" desc="Map name" type="string"/>
+	  <param name="GameRules" desc="Game rules" type="string"/>
+	  <param name="PingToServer" desc="Ping to server" type="int"/>
+  </function>
+<function name="RemoveServer" funcname="RemoveServer">
+      <param name="ServerId" desc="Server id" type="int"/>
+</function>
+
+<!-- Main page -->
+<function name="ShowMainPage" funcname="ShowMainPage"/>
+<function name="HideAll" funcname="HideAll"/>
+
+<!-- Server message -->
+<function name="ShowServerMessage" funcname="ShowServerMsg">
+      <param name="Message" desc="Message" type="string"/>
+</function>
+<function name="HideServerMsg" funcname="HideServerMsg"/>
+
+<!-- Background -->
+<function name="ShowBackground" funcname="ShowBg"/>
+<function name="HideBackground" funcname="HideBg"/>
+
+
+ </functions>
+ 
+ <variables>
+ 
+ <!-- Login page -->
+  <variable name="Login" varname="_root.lp_login.text"/>
+  <variable name="Password" varname="_root.lp_password.text"/>
+  
+  <!-- Player panel -->
+  <variable name="Nickname" varname="_root.playerName.text"/>
+  <variable name="Level" varname="_root.playerLevel.text"/>
+  <variable name="Xp" varname="_root.playerXp.text"/>
+  <variable name="Money" varname="_root.playerMoney.text"/>
+  <variable name="ServerOnline" varname="_root.serverOnline.text"/>
+  
+  
+</variables>
+
+</UIElement>
+
+
+</UIElements>
+
+

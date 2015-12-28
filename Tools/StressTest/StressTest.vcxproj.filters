@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Packets\SendPacket.cpp">
+      <Filter>Packets</Filter>
+    </ClCompile>
+    <ClCompile Include="Packets\ReadPacket.cpp">
+      <Filter>Packets</Filter>
+    </ClCompile>
+    <ClCompile Include="Packets\Packets.cpp">
+      <Filter>Packets</Filter>
+    </ClCompile>
+    <ClCompile Include="Packets\PacketDebugger.cpp">
+      <Filter>Packets</Filter>
+    </ClCompile>
+    <ClCompile Include="Packets\ByteArray.cpp">
+      <Filter>Packets</Filter>
+    </ClCompile>
+    <ClCompile Include="Packets\BasePacket.cpp">
+      <Filter>Packets</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\PacketQueue.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="StressTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Packets\RSP.h">
+      <Filter>Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Packets\Packets.h">
+      <Filter>Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Packets\PacketDebugger.h">
+      <Filter>Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Packets\ByteArray.h">
+      <Filter>Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Packets\BasePacket.h">
+      <Filter>Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\md5.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\PacketQueue.h">
+      <Filter>System</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Packets">
+      <UniqueIdentifier>{24aaf0c1-e2de-445b-bb82-1922beb3106a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{b7db1b23-ff54-41a8-8fe7-82253fbc3205}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

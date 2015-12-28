@@ -1,0 +1,7 @@
+// CryEngine Header File.
+// Copyright (C), Crytek, 1999-2014.
+
+#ifndef ATLOBJECTS_SDLMIXER_H_INCLUDED
+#define ATLOBJECTS_SDLMIXER_H_INCLUDED
+
+#endif // ATLOBJECTS_SDLMIXER_H_INCLUDED

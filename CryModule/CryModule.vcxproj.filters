@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{5de50f2c-ecd8-437f-bae5-a5bba8c600f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nodes">
+      <UniqueIdentifier>{47e3b4de-7c21-49aa-8ec1-83cfdb4318da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packets">
+      <UniqueIdentifier>{7e858676-960b-4267-bf87-d957bc2bbf9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{0f368a9a-ef36-4a7b-994f-f9a58c2ccd25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{712a22c1-1aef-4c12-b426-a0664c835f9a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Nodes\MsEvents.h">
+      <Filter>Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Packets\BasePacket.h">
+      <Filter>Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Packets\ByteArray.h">
+      <Filter>Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Packets\PacketDebugger.h">
+      <Filter>Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Packets\Packets.h">
+      <Filter>Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Packets\RSP.h">
+      <Filter>Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Global.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\PacketQueue.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\md5.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\Ping.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="MasterServer.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="CryModule.h" />
+    <ClInclude Include="..\versions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Nodes\FlowNodes.cpp">
+      <Filter>Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\MsEvents.cpp">
+      <Filter>Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Packets\BasePacket.cpp">
+      <Filter>Packets</Filter>
+    </ClCompile>
+    <ClCompile Include="Packets\ByteArray.cpp">
+      <Filter>Packets</Filter>
+    </ClCompile>
+    <ClCompile Include="Packets\PacketDebugger.cpp">
+      <Filter>Packets</Filter>
+    </ClCompile>
+    <ClCompile Include="Packets\Packets.cpp">
+      <Filter>Packets</Filter>
+    </ClCompile>
+    <ClCompile Include="Packets\ReadPacket.cpp">
+      <Filter>Packets</Filter>
+    </ClCompile>
+    <ClCompile Include="Packets\SendPacket.cpp">
+      <Filter>Packets</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Global.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\PacketQueue.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\Ping.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAdx.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="DllMain.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="MasterServer.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="CryModule.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\FireNET.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="server.ico" />
+  </ItemGroup>
+</Project>

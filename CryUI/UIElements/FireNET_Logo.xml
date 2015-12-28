@@ -1,0 +1,23 @@
+<UIElements name="Logo">
+
+<UIElement name="FireNET_Logo" mouseevents="0" keyevents="0" cursor="0" controller_input="0">
+    
+    <GFx file="Textures\FireNET_Logo.gfx" layer="1" alpha="0">
+      <Constraints>
+         <Align mode="fullscreen" valign="center" halign="center" scale="1" max="0" />
+      </Constraints>
+    </GFx>
+	
+<events>
+</events>
+
+<functions>
+</functions>
+ 
+<variables> 
+</variables>
+
+</UIElement>
+</UIElements>
+
+

@@ -1,0 +1,5 @@
+# Copyright (C) 2015, Crytek GmbH
+
+def build(bld):
+	bld.recurse('implementations', name='build')
+	bld.recurse('Common', name='build')

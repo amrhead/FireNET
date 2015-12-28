@@ -1,0 +1,78 @@
+{
+    "NoUberFile": {
+        "Root": [
+            "StdAfx.cpp"
+        ]
+    },
+    "CryInput_Uber_0.cpp": {
+        "Durango/Kinect": [],
+        "Synergy": [
+            "Synergy/SynergyContext.cpp",
+            "Synergy/SynergyKeyboard.cpp",
+            "Synergy/SynergyMouse.cpp",
+            "Synergy/SynergyContext.h",
+            "Synergy/SynergyKeyboard.h",
+            "Synergy/SynergyMouse.h"
+        ],
+        "Linux": [
+            "LinuxInput.cpp",
+            "LinuxInput.h"
+        ],
+        "Shared": [
+            "BaseInput.cpp",
+            "InputDevice.cpp",
+            "XInputDevice.cpp",
+            "BaseInput.h",
+            "InputDevice.h",
+            "XInputDevice.h"
+        ],
+        "TrackIR": [
+            "NaturalPointInputNULL.h"
+        ],
+        "Kinect": [
+            "KinectInput.cpp",
+            "KinectXboxSyncThread.cpp",
+            "KinectInput.h",
+            "KinectInputNULL.h",
+            "KinectXboxSyncThread.h"
+        ],
+        "Durango": [],
+        "DX": [
+            "DXInput.cpp",
+            "DXInputDevice.cpp",
+            "Keyboard.cpp",
+            "Mouse.cpp",
+            "DXInput.h",
+            "DXInputDevice.h",
+            "Keyboard.h",
+            "Mouse.h"
+        ],
+        "Orbis": [
+            "OrbisPadWin.h"
+        ],
+        "DX/HeadmountedDevice": [
+            "HeadmountedDevice/HeadMountedDevice.h",
+            "HeadmountedDevice/HeadMountedDevice.cpp"
+        ],
+        "SDL": [
+            "SDLPad.cpp",
+            "SDLPad.h",
+            "SDLMouse.cpp",
+            "SDLMouse.h",
+            "SDLKeyboard.cpp",
+            "SDLKeyboard.h"
+        ],
+        "Kinect/Filters": [
+            "Filters/JointFilter.cpp",
+            "Filters/JointFilter.h"
+        ],
+        "Root": [
+            "CryInput.cpp",
+            "CryInput.h",
+            "InputCVars.cpp",
+            "InputCVars.h",
+            "resource.h",
+            "StdAfx.h"
+        ]
+    }
+}

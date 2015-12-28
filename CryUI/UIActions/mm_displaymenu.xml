@@ -1,0 +1,174 @@
+<Graph Description="" Group="MM_Display" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="76" Class="UI:Action:Start" pos="1360,1400,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="404" Class="UI:Display:Display" pos="1650,1370,0" flags="0">
+   <Inputs uiElements_Element="Menu" instanceID="-1"/>
+  </Node>
+  <Node Id="437" Class="UI:Events:Menu:SendGlobalChatMsg" pos="2510,1900,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="440" Class="UI:Functions:Menu:UpdateGlobalChat" pos="2840,2010,0" flags="0">
+   <Inputs instanceID="-1" Message=""/>
+  </Node>
+  <Node Id="441" Name="Global_chat" Class="_commentbox" pos="2450,1832.1578,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="640" Height="220"/>
+   <NodeSize Width="640" Height="275.48279"/>
+  </Node>
+  <Node Id="442" Class="UI:Functions:Menu:ShowMainPage" pos="2010,1400,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="444" Class="UI:Variable:Var" pos="2610,1170,0" flags="0">
+   <Inputs uiVariables_Variable="Menu:Nickname" instanceID="-1"/>
+  </Node>
+  <Node Id="445" Class="UI:Variable:Var" pos="2610,1420,0" flags="0">
+   <Inputs uiVariables_Variable="Menu:Level" instanceID="-1"/>
+  </Node>
+  <Node Id="446" Class="UI:Variable:Var" pos="2600,1290,0" flags="0">
+   <Inputs uiVariables_Variable="Menu:Xp" instanceID="-1"/>
+  </Node>
+  <Node Id="447" Class="UI:Variable:Var" pos="2610,1530,0" flags="0">
+   <Inputs uiVariables_Variable="Menu:Money" instanceID="-1"/>
+  </Node>
+  <Node Id="448" Class="UI:Variable:Var" pos="2600,1640,0" flags="0">
+   <Inputs uiVariables_Variable="Menu:ServerOnline" instanceID="-1"/>
+  </Node>
+  <Node Id="450" Class="UI:Variable:Var" pos="2160,1900,0" flags="0">
+   <Inputs uiVariables_Variable="Menu:Nickname" instanceID="-1"/>
+  </Node>
+  <Node Id="451" Class="UI:Variable:Var" pos="2160,2020,0" flags="0">
+   <Inputs uiVariables_Variable="Menu:Level" instanceID="-1"/>
+  </Node>
+  <Node Id="452" Class="UI:Variable:Var" pos="2160,2270,0" flags="0">
+   <Inputs uiVariables_Variable="Menu:Xp" instanceID="-1"/>
+  </Node>
+  <Node Id="453" Class="UI:Variable:Var" pos="2160,2140,0" flags="0">
+   <Inputs uiVariables_Variable="Menu:Money" instanceID="-1"/>
+  </Node>
+  <Node Id="454" Name="Update_player_information" Class="_commentbox" pos="1700,1829.108,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="710" Height="530"/>
+   <NodeSize Width="710" Height="585.48279"/>
+  </Node>
+  <Node Id="455" Name="Start_action" Class="_commentbox" pos="1320,1101.5233,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1560" Height="610"/>
+   <NodeSize Width="1560" Height="665.48279"/>
+  </Node>
+  <Node Id="457" Class="UI:Functions:Menu:UpdateOrAddServer" pos="3350,1050,0" flags="0">
+   <Inputs instanceID="-1" ServerId="0" ServerIP="" ServerPort="0" ServerName="" PlayersInServer="" MapName="" GameRules="" PingToServer="0"/>
+  </Node>
+  <Node Id="458" Name="Server_list" Class="_commentbox" pos="2900,982.27802,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1090" Height="590"/>
+   <NodeSize Width="1090" Height="645.48279"/>
+  </Node>
+  <Node Id="460" Class="UI:Functions:Menu:RemoveServer" pos="3350,1280,0" flags="0">
+   <Inputs instanceID="-1" ServerId="0"/>
+  </Node>
+  <Node Id="461" Class="UI:Events:Menu:RefreshBtnPress" pos="3070,1370,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="464" Class="UI:Variable:Var" pos="2840,2180,0" flags="0">
+   <Inputs uiVariables_Variable="Menu:ServerOnline" instanceID="-1"/>
+  </Node>
+  <Node Id="465" Name="Update_server_info" Class="_commentbox" pos="2460,2109.8992,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="660" Height="130"/>
+   <NodeSize Width="660" Height="185.48279"/>
+  </Node>
+  <Node Id="468" Class="UI:Events:Menu:ConnectToServer" pos="3070,1460,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="471" Class="UI:Functions:Menu:ShowBackground" pos="2010,1330,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="472" Class="UI:Functions:Menu:ShowServerMessage" pos="3680,1550,0" flags="0">
+   <Inputs instanceID="-1" Message="@ui_connection"/>
+  </Node>
+  <Node Id="473" Class="UI:Functions:Menu:HideAll" pos="3380,1500,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="474" Class="UI:Functions:Menu:ShowBackground" pos="3380,1560,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="475" Class="FireNet:MasterServer:GetMasterInformation" pos="2280,1340,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="476" Class="UI:Events:FireNET:MasterServer:AddOrUpadateGameServer" pos="2910,1060,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="478" Class="FireNet:MasterServer:GameServersTools" pos="3370,1410,0" flags="0">
+   <Inputs ServerID="0"/>
+  </Node>
+  <Node Id="480" Class="FireNet:MasterServer:SendChatMessage" pos="2820,1900,0" flags="0">
+   <Inputs Message="" Type="Global" PrivatePlayerId="0"/>
+  </Node>
+  <Node Id="481" Class="UI:Events:FireNET:MasterServer:ServerInfoResived" pos="2470,2200,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="483" Class="FireNet:MasterServer:GameServersTools" pos="2280,1490,0" flags="0">
+   <Inputs ServerID="0"/>
+  </Node>
+  <Node Id="484" Class="UI:Events:FireNET:MasterServer:RemoveGameServer" pos="2960,1280,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="486" Class="UI:Events:FireNET:MasterServer:ChatMessageReceived" pos="2470,2010,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="487" Class="UI:Events:FireNET:MasterServer:AccountInfoReceived" pos="1717.6052,2083.5078,0" flags="1">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="404" nodeOut="76" portIn="show" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="442" nodeOut="404" portIn="Call" portOut="onShow" enabled="1"/>
+  <Edge nodeIn="471" nodeOut="404" portIn="Call" portOut="onShow" enabled="1"/>
+  <Edge nodeIn="480" nodeOut="437" portIn="Message" portOut="Message" enabled="1"/>
+  <Edge nodeIn="480" nodeOut="437" portIn="Send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="475" nodeOut="442" portIn="Get" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="483" nodeOut="442" portIn="Refresh server list" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="478" nodeOut="461" portIn="Refresh server list" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="473" nodeOut="468" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="478" nodeOut="468" portIn="ServerID" portOut="id" enabled="1"/>
+  <Edge nodeIn="478" nodeOut="468" portIn="Connect to game server" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="474" nodeOut="473" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="472" nodeOut="474" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="444" nodeOut="475" portIn="Set" portOut="Nickname" enabled="1"/>
+  <Edge nodeIn="444" nodeOut="475" portIn="Value" portOut="Nickname" enabled="1"/>
+  <Edge nodeIn="445" nodeOut="475" portIn="Set" portOut="Level" enabled="1"/>
+  <Edge nodeIn="445" nodeOut="475" portIn="Value" portOut="Level" enabled="1"/>
+  <Edge nodeIn="446" nodeOut="475" portIn="Set" portOut="Xp" enabled="1"/>
+  <Edge nodeIn="446" nodeOut="475" portIn="Value" portOut="Xp" enabled="1"/>
+  <Edge nodeIn="447" nodeOut="475" portIn="Set" portOut="GameCash" enabled="1"/>
+  <Edge nodeIn="447" nodeOut="475" portIn="Value" portOut="GameCash" enabled="1"/>
+  <Edge nodeIn="448" nodeOut="475" portIn="Set" portOut="Players online" enabled="1"/>
+  <Edge nodeIn="448" nodeOut="475" portIn="Value" portOut="Players online" enabled="1"/>
+  <Edge nodeIn="457" nodeOut="476" portIn="GameRules" portOut="Gamerules" enabled="1"/>
+  <Edge nodeIn="457" nodeOut="476" portIn="MapName" portOut="MapName" enabled="1"/>
+  <Edge nodeIn="457" nodeOut="476" portIn="PingToServer" portOut="Ping" enabled="1"/>
+  <Edge nodeIn="457" nodeOut="476" portIn="PlayersInServer" portOut="PlayersInServer" enabled="1"/>
+  <Edge nodeIn="457" nodeOut="476" portIn="ServerIP" portOut="ServerIP" enabled="1"/>
+  <Edge nodeIn="457" nodeOut="476" portIn="ServerId" portOut="ServerId" enabled="1"/>
+  <Edge nodeIn="457" nodeOut="476" portIn="ServerName" portOut="ServerName" enabled="1"/>
+  <Edge nodeIn="457" nodeOut="476" portIn="ServerPort" portOut="ServerPort" enabled="1"/>
+  <Edge nodeIn="457" nodeOut="476" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="464" nodeOut="481" portIn="Set" portOut="PlayersAmmount" enabled="1"/>
+  <Edge nodeIn="464" nodeOut="481" portIn="Value" portOut="PlayersAmmount" enabled="1"/>
+  <Edge nodeIn="460" nodeOut="484" portIn="ServerId" portOut="Id" enabled="1"/>
+  <Edge nodeIn="460" nodeOut="484" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="440" nodeOut="486" portIn="Message" portOut="Message" enabled="1"/>
+  <Edge nodeIn="440" nodeOut="486" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="450" nodeOut="487" portIn="Set" portOut="Nickname" enabled="1"/>
+  <Edge nodeIn="450" nodeOut="487" portIn="Value" portOut="Nickname" enabled="1"/>
+  <Edge nodeIn="451" nodeOut="487" portIn="Set" portOut="Level" enabled="1"/>
+  <Edge nodeIn="451" nodeOut="487" portIn="Value" portOut="Level" enabled="1"/>
+  <Edge nodeIn="452" nodeOut="487" portIn="Set" portOut="Xp" enabled="1"/>
+  <Edge nodeIn="452" nodeOut="487" portIn="Value" portOut="Xp" enabled="1"/>
+  <Edge nodeIn="453" nodeOut="487" portIn="Set" portOut="Money" enabled="1"/>
+  <Edge nodeIn="453" nodeOut="487" portIn="Value" portOut="Money" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

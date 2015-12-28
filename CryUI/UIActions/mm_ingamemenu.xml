@@ -1,0 +1,74 @@
+<Graph Description="" Group="MM_Display" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="UI:Action:Start" pos="-520,-170,0" flags="0">
+   <Inputs UseAsState="0"/>
+  </Node>
+  <Node Id="3" Class="UI:Display:Display" pos="590,-160,0" flags="0">
+   <Inputs uiElements_Element="InGameMenu" instanceID="-1"/>
+  </Node>
+  <Node Id="7" Class="UI:Events:InGameMenu:ResumeBtnPress" pos="-469.79779,48.339321,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="9" Class="UI:Events:InGameMenu:SettingsBtnPress" pos="-470,140,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="10" Class="UI:Events:InGameMenu:DisconnectBtnPress" pos="-490,240,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="11" Class="UI:Events:InGameMenu:CloseBtnPress" pos="-460,330,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="12" Class="UI:Functions:LobbyMP:LeaveGame" pos="-160,240,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="13" Class="UI:Functions:Settings:LogoutUser" pos="-160,340,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="14" Class="UI:Functions:Game:ExitGame" pos="-160,390,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="15" Name="Buttons" Class="_commentbox" pos="-500,-90.152092,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="730" Height="500"/>
+   <NodeSize Width="730" Height="527.87927"/>
+  </Node>
+  <Node Id="16" Class="UI:Events:MenuEvents:OnStartIngameMenu" pos="210,-130,0" flags="1">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="19" Class="UI:Functions:MenuEvents:DisplayIngameMenu" pos="-90,20,0" flags="0">
+   <Inputs Display="0"/>
+  </Node>
+  <Node Id="21" Class="Logic:Any" pos="280,30,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="22" Class="UI:Action:End" pos="810,250,0" flags="0">
+   <Inputs UseAsState="0" Args=""/>
+  </Node>
+  <Node Id="23" Class="Logic:Any" pos="510,250,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="25" Class="UI:Events:MenuEvents:OnStopIngameMenu" pos="-490,-30,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="26" Class="Logic:Any" pos="-180,20,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="21" nodeOut="1" portIn="in1" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="26" nodeOut="7" portIn="in2" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="12" nodeOut="10" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="13" nodeOut="11" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="23" nodeOut="11" portIn="in2" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="23" nodeOut="12" portIn="in1" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="14" nodeOut="13" portIn="send" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="3" nodeOut="16" portIn="reload" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="3" nodeOut="16" portIn="show" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="21" nodeOut="19" portIn="in2" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="3" nodeOut="21" portIn="hide" portOut="out" enabled="1"/>
+  <Edge nodeIn="22" nodeOut="23" portIn="EndAction" portOut="out" enabled="1"/>
+  <Edge nodeIn="26" nodeOut="25" portIn="in1" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="19" nodeOut="26" portIn="send" portOut="out" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

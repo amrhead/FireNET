@@ -1,0 +1,26 @@
+#############################################################################
+## Crytek Source File
+## Copyright (C) 2013, Crytek Studios
+##
+## Creator: Christopher Bolte
+## Date: Oct 31, 2013
+## Description: WAF  based build system
+#############################################################################
+
+def build(bld):
+	
+	bld.CryEngineModule(
+		target		= 'CryAudioImplSDLMixer',
+		vs_filter	= 'CryEngine/Audio/Implementations',
+
+		file_list   = 'audioimplsdlmixer.waf_files',
+		pch			= 'stdafx.cpp',
+
+		includes = ['../../common', bld.CreateRootRelativePath('Code/SDKs/SDL2/include/win'), bld.CreateRootRelativePath('Code/SDKs/Audio/SDL_mixer/include')],
+		
+		win_lib = ['SDL2', 'SDL2_mixer'],
+		
+		win_x86_libpath = [bld.CreateRootRelativePath('Code/SDKs/SDL2/lib/x86/'), bld.CreateRootRelativePath('Code/SDKs/Audio/SDL_mixer/lib/x86')],
+		
+		win_x64_libpath = [bld.CreateRootRelativePath('Code/SDKs/SDL2/lib/x64/'), bld.CreateRootRelativePath('Code/SDKs/Audio/SDL_mixer/lib/x64')],
+	)

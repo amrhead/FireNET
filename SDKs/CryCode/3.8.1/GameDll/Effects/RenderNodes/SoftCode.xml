@@ -1,0 +1,4 @@
+<softcode>
+  <name>GameRenderNodes</name>
+  <source>$(ProjectDir)/Effects/RenderNodes/GameRenderNodeSoftCodeLibrary.cpp</source>
+</softcode>

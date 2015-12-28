@@ -1,0 +1,130 @@
+<Graph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="UI:Events:System:OnSystemStarted" pos="-3250,-240,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="3" Name="Connect_to_Master_Server_and_show_autorization_page" Class="_commentbox" pos="-3280,-379.28375,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="2460" Height="460"/>
+   <NodeSize Width="2460" Height="496.92468"/>
+  </Node>
+  <Node Id="14" Class="UI:Events:System:OnLoadingError" pos="-1990,20,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="107" Class="UI:Functions:LobbyMP:SetMultiplayer" pos="-2360,-130,0" flags="0">
+   <Inputs isMultiplayer="1"/>
+  </Node>
+  <Node Id="115" Class="UI:Functions:LobbyMP:LockController" pos="-2360,-70,0" flags="0">
+   <Inputs LockController="1"/>
+  </Node>
+  <Node Id="377" Class="UI:Action:Control" pos="-1660,-150,0" flags="0">
+   <Inputs uiActions_UIAction="sys_error" Strict="1" Args=""/>
+  </Node>
+  <Node Id="378" Class="UI:Action:Control" pos="-1660,-270,0" flags="0">
+   <Inputs uiActions_UIAction="mm_autorization" Strict="1" Args=""/>
+  </Node>
+  <Node Id="386" Class="UI:Action:Control" pos="-1660,-10,0" flags="0">
+   <Inputs uiActions_UIAction="sys_error" Strict="1" Args="@loading_error"/>
+  </Node>
+  <Node Id="400" Class="UI:Events:System:OnDisconnect" pos="-2860,-680,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="404" Class="UI:Action:Control" pos="-2350,-670,0" flags="0">
+   <Inputs uiActions_UIAction="mm_displaymenu" Strict="0" Args=""/>
+  </Node>
+  <Node Id="405" Class="Logic:Any" pos="-2520,-630,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="406" Class="UI:Events:System:OnReload" pos="-2860,-540,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="407" Class="UI:Events:System:OnUnloadComplete" pos="-2880,-610,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="421" Name="Close_button" Class="_commentbox" pos="-1750,-1189.1638,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="530" Height="100"/>
+   <NodeSize Width="530" Height="136.92468"/>
+  </Node>
+  <Node Id="433" Class="UI:Events:Menu:CloseBtnPress" pos="-1730,-1150,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="450" Class="UI:Functions:Settings:LogoutUser" pos="-1460,-1150,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="451" Class="UI:Functions:Game:ExitGame" pos="-1460,-1100,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="473" Class="UI:Display:Display" pos="-2490.9199,-925.64551,0" flags="0">
+   <Inputs uiElements_Element="Menu" instanceID="-1"/>
+  </Node>
+  <Node Id="474" Class="UI:Events:System:OnLoadingComplete" pos="-2880,-860,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="475" Class="UI:Functions:Menu:ShowServerMessage" pos="-2520,-530,0" flags="0">
+   <Inputs instanceID="-1" Message=""/>
+  </Node>
+  <Node Id="476" Name="System" Class="_commentbox" pos="-2890,-1199.1907,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1030" Height="710"/>
+   <NodeSize Width="1030" Height="746.92468"/>
+  </Node>
+  <Node Id="477" Class="UI:Events:System:OnLoadingStart" pos="-2870,-1040,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="478" Class="UI:Functions:Menu:ShowServerMessage" pos="-2490,-1040,0" flags="0">
+   <Inputs instanceID="-1" Message="@ui_loading"/>
+  </Node>
+  <Node Id="479" Class="UI:Action:Control" pos="-2140,-910,0" flags="0">
+   <Inputs uiActions_UIAction="mm_ingamemenu" Strict="0" Args=""/>
+  </Node>
+  <Node Id="481" Class="UI:Action:Control" pos="-1090,-880,0" flags="0">
+   <Inputs uiActions_UIAction="sys_error" Strict="1" Args="@loading_error"/>
+  </Node>
+  <Node Id="482" Class="UI:Display:Display" pos="-1310,-920,0" flags="0" InHideMask="1023" OutHideMask="255">
+   <Inputs uiElements_Element="Menu" instanceID="-1"/>
+  </Node>
+  <Node Id="483" Class="FireNet:MasterServer:ConnectToMasterServer" pos="-2370,-210,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="485" Class="UI:Events:FireNET:MasterServer:ErrorReceived" pos="-1700,-900,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="486" Class="UI:Display:Display" pos="-2930,-260,0" flags="0">
+   <Inputs uiElements_Element="FireNET_Logo" instanceID="-1"/>
+  </Node>
+  <Node Id="488" Class="UI:Display:Display" pos="-1300,-250,0" flags="0">
+   <Inputs uiElements_Element="FireNET_Logo" instanceID="-1"/>
+  </Node>
+  <Node Id="491" Class="Time:TimedCounter" pos="-2580,-220,0" flags="0">
+   <Inputs period="4" limit="0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="486" nodeOut="1" portIn="show" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="386" nodeOut="14" portIn="Start" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="115" nodeOut="107" portIn="send" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="488" nodeOut="378" portIn="unload" portOut="OnStart" enabled="1"/>
+  <Edge nodeIn="405" nodeOut="400" portIn="in1" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="475" nodeOut="400" portIn="Message" portOut="Error" enabled="1"/>
+  <Edge nodeIn="475" nodeOut="400" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="404" nodeOut="405" portIn="Start" portOut="out" enabled="1"/>
+  <Edge nodeIn="405" nodeOut="406" portIn="in3" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="405" nodeOut="407" portIn="in2" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="450" nodeOut="433" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="451" nodeOut="450" portIn="send" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="479" nodeOut="473" portIn="Start" portOut="onUnload" enabled="1"/>
+  <Edge nodeIn="473" nodeOut="474" portIn="unload" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="478" nodeOut="477" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="481" nodeOut="482" portIn="Start" portOut="onUnload" enabled="1"/>
+  <Edge nodeIn="107" nodeOut="483" portIn="send" portOut="Success" enabled="1"/>
+  <Edge nodeIn="377" nodeOut="483" portIn="Args" portOut="Error" enabled="1"/>
+  <Edge nodeIn="377" nodeOut="483" portIn="Start" portOut="Error" enabled="1"/>
+  <Edge nodeIn="378" nodeOut="483" portIn="Start" portOut="Success" enabled="1"/>
+  <Edge nodeIn="481" nodeOut="485" portIn="Args" portOut="Error" enabled="1"/>
+  <Edge nodeIn="482" nodeOut="485" portIn="unload" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="491" nodeOut="486" portIn="start" portOut="onShow" enabled="1"/>
+  <Edge nodeIn="483" nodeOut="491" portIn="Connect" portOut="finished" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

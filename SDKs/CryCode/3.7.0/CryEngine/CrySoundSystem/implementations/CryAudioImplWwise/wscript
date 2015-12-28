@@ -1,0 +1,77 @@
+#############################################################################
+## Crytek Source File
+## Copyright (C) 2013, Crytek Studios
+##
+## Creator: Christopher Bolte
+## Date: Oct 31, 2013
+## Description: WAF  based build system
+#############################################################################
+
+def build(bld):
+	wwise_core_libs		= [ 'AkMemoryMgr',			'AkMusicEngine',		'AkSoundEngine',			'AkStreamMgr' ]
+
+	wwise_plugins_libs	= [	'AkAudioInputSource',	'AkCompressorFX',		'AkConvolutionReverbFX',	'AkDelayFX',						'AkExpanderFX',
+							'AkFlangerFX',			'AkGainFX',				'AkGuitarDistortionFX',		'AkHarmonizerFX',					'AkMatrixReverbFX',			
+							'AkMeterFX',			'AkParametricEQFX',		'AkPeakLimiterFX',			'AkPitchShifterFX',					'AkRoomVerbFX',
+							'AkSilenceSource',		'AkSineSource',			'AkSoundSeedImpactFX',		'AkSoundSeedWind',					'AkSoundSeedWoosh',
+							'AkStereoDelayFX',		'AkTimeStretchFX',		'AkToneSource',				'AkTremoloFX',						'AkVorbisDecoder',
+							'McDSPFutzBoxFX',		'McDSPLimiterFX',		'AkSynthOne' ]
+	
+	wwise_astound_plugins_libs	= [ 'AstoundsoundExpanderFX',	'AstoundsoundShared',				'AstoundsoundRTIFX',			'AstoundsoundFolddownFX' ]
+	wwise_extra_plugins_libs	= [ 'iZTrashBoxModelerFX',		'iZTrashDistortionFX',				'iZTrashDynamicsFX',			'iZTrashDelayFX',
+									'iZHybridReverbFX',			'CrankcaseAudioREVModelPlayerFX',	'iZTrashMultibandDistortionFX',	'iZTrashFiltersFX',
+									'AkMotionGenerator',		'AkRumble',		'IOSONOProximityMixer' ]
+
+	wwise_non_release_libs		= [ 'CommunicationCentral' ]
+	wwise_non_release_win_libs	= [ 'SFlib' ]
+
+	wwise_win_libs				= [ 'AkMP3Source', 'AuroHeadphoneFX', 'AuroPannerMixer' ]
+
+	bld.CryEngineModule(
+		target		= 'CryAudioImplWwise',
+		vs_filter	= 'CryEngine/Audio/Implementations',
+
+		file_list	= 'audioimplwwise.waf_files',
+		pch			= 'stdafx.cpp',
+
+		lib			= wwise_core_libs + wwise_plugins_libs,
+		debug_lib	= wwise_non_release_libs,
+		profile_lib	= wwise_non_release_libs,
+
+		includes	= [ '../../Common', bld.CreateRootRelativePath('Code/SDKs/Audio') ],
+
+		debug_defines			= 'WWISE_FOR_DEBUG',
+		profile_defines			= 'WWISE_FOR_PROFILE',
+		performance_defines		= 'WWISE_FOR_RELEASE',
+		release_defines			= 'WWISE_FOR_RELEASE',
+		
+		win_lib                 = wwise_win_libs + wwise_extra_plugins_libs + wwise_astound_plugins_libs + [ 'Ole32', 'dxguid', 'ws2_32', 'Dsound', 'XINPUT9_1_0', 'Msacm32' ],
+		win_debug_lib           = wwise_non_release_win_libs,
+		win_profile_lib         = wwise_non_release_win_libs,
+		
+		win_x86_debug_libpath			= bld.CreateRootRelativePath('Code/SDKs/Audio/AK/lib/win32/debug/vc110'),
+		win_x86_profile_libpath			= bld.CreateRootRelativePath('Code/SDKs/Audio/AK/lib/win32/profile/vc110'),
+		win_x86_performance_libpath		= bld.CreateRootRelativePath('Code/SDKs/Audio/AK/lib/win32/release/vc110'),
+		win_x86_release_libpath			= bld.CreateRootRelativePath('Code/SDKs/Audio/AK/lib/win32/release/vc110'),
+
+		win_x64_debug_libpath			= bld.CreateRootRelativePath('Code/SDKs/Audio/AK/lib/x64/debug/vc110'),
+		win_x64_profile_libpath			= bld.CreateRootRelativePath('Code/SDKs/Audio/AK/lib/x64/profile/vc110'),
+		win_x64_performance_libpath		= bld.CreateRootRelativePath('Code/SDKs/Audio/AK/lib/x64/release/vc110'),
+		win_x64_release_libpath			= bld.CreateRootRelativePath('Code/SDKs/Audio/AK/lib/x64/release/vc110'),
+		
+
+
+		linux_lib                        = wwise_non_release_libs + [ 'SDL2', 'pthread' ],
+		linux_x64_libpath                = bld.CreateRootRelativePath('Code/SDKs/SDL2/lib/linux/'),
+		linux_x64_debug_libpath          = bld.CreateRootRelativePath('Code/SDKs/Audio/AK/lib/linux/x64/debug'),			
+		linux_x64_profile_libpath        = bld.CreateRootRelativePath('Code/SDKs/Audio/AK/lib/linux/x64/profile'),
+		linux_x64_release_libpath        = bld.CreateRootRelativePath('Code/SDKs/Audio/AK/lib/linux/x64/release'),			
+		linux_x64_performance_libpath    = bld.CreateRootRelativePath('Code/SDKs/Audio/AK/lib/linux/x64/release'),
+		
+		darwin_lib                       = wwise_astound_plugins_libs + [ 'AkAACDecoder' ],
+		darwin_framework                 = [ 'CoreAudio', 'AudioUnit', 'AudioToolbox' ],
+		darwin_x64_debug_libpath         = bld.CreateRootRelativePath('Code/SDKs/Audio/AK/lib/mac/x64/debug'),			
+		darwin_x64_profile_libpath       = bld.CreateRootRelativePath('Code/SDKs/Audio/AK/lib/mac/x64/profile'),
+		darwin_x64_release_libpath       = bld.CreateRootRelativePath('Code/SDKs/Audio/AK/lib/mac/x64/release'),			
+		darwin_x64_performance_libpath   = bld.CreateRootRelativePath('Code/SDKs/Audio/AK/lib/mac/x64/release'),
+	)

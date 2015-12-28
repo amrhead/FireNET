@@ -1,0 +1,4 @@
+<softcode>
+  <name>GameEffects</name>
+  <source>$(ProjectDir)/Effects/GameEffects/GameEffectSoftCodeLibrary.cpp</source>
+</softcode>

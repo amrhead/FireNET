@@ -1,0 +1,27 @@
+<Graph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="76" Class="UI:Action:Start" pos="-190,20,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="200" Class="UI:Action:End" pos="730,40,0" flags="0">
+   <Inputs UseAsState="0" Args=""/>
+  </Node>
+  <Node Id="201" Class="UI:Display:Display" pos="80,-30,0" flags="0">
+   <Inputs uiElements_Element="Menu" instanceID="-1"/>
+  </Node>
+  <Node Id="202" Class="UI:Functions:Menu:ShowBackground" pos="410,-30,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="203" Class="UI:Functions:Menu:ShowServerMessage" pos="410,40,0" flags="0">
+   <Inputs instanceID="-1" Message=""/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="201" nodeOut="76" portIn="show" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="203" nodeOut="76" portIn="Message" portOut="Args" enabled="1"/>
+  <Edge nodeIn="202" nodeOut="201" portIn="Call" portOut="onShow" enabled="1"/>
+  <Edge nodeIn="203" nodeOut="202" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="200" nodeOut="203" portIn="EndAction" portOut="OnCall" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

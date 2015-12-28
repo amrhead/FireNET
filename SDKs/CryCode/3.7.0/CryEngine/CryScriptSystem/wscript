@@ -1,0 +1,21 @@
+#############################################################################
+## Crytek Source File
+## Copyright (C) 2013, Crytek Studios
+##
+## Creator: Christopher Bolte
+## Date: Oct 31, 2013
+## Description: WAF  based build system
+#############################################################################
+	
+def build(bld):
+
+	bld.CryEngineModule(
+		target      = 'CryScriptSystem',
+		vs_filter   = 'CryEngine',		
+		file_list   = 'cryscriptsystem.waf_files',
+
+		pch         = 'StdAfx.cpp',		
+		includes    = 'Lua',
+
+		win_lib     = [ 'shell32', 'Gdi32', 'wininet', 'Ole32' ],
+	)

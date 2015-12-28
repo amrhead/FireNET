@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="MySql">
+      <UniqueIdentifier>{cd6ae987-080a-4a19-8709-9116fbbdd5fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packets">
+      <UniqueIdentifier>{b2f5f7d9-e8ea-4584-adea-9d729a283829}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Xml">
+      <UniqueIdentifier>{5a28d853-1398-4c7f-935c-309a2b3eb0a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{8e3459ad-50db-4697-9e76-5257562f18a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server">
+      <UniqueIdentifier>{38c87b0d-a478-4d50-9dc3-b8adee71f1be}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MasterServer.cpp" />
+    <ClCompile Include="MySql\MySql.cpp">
+      <Filter>MySql</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\PacketQueue.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\TcpServer.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="System\AppLog.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\ConsoleCommands.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Global.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Settings.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Xml\XmlDatabase.cpp">
+      <Filter>Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="Packets\BasePacket.cpp">
+      <Filter>Packets</Filter>
+    </ClCompile>
+    <ClCompile Include="Packets\ByteArray.cpp">
+      <Filter>Packets</Filter>
+    </ClCompile>
+    <ClCompile Include="Packets\PacketDebugger.cpp">
+      <Filter>Packets</Filter>
+    </ClCompile>
+    <ClCompile Include="Packets\Packets.cpp">
+      <Filter>Packets</Filter>
+    </ClCompile>
+    <ClCompile Include="Packets\ReadPacket.cpp">
+      <Filter>Packets</Filter>
+    </ClCompile>
+    <ClCompile Include="Packets\SendPacket.cpp">
+      <Filter>Packets</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="MySql\MySql.h">
+      <Filter>MySql</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\PacketQueue.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\TcpServer.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="System\AppLog.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\ConsoleCommands.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Global.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\md5.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Settings.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Xml\XmlDatabase.h">
+      <Filter>Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="Packets\BasePacket.h">
+      <Filter>Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Packets\ByteArray.h">
+      <Filter>Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Packets\PacketDebugger.h">
+      <Filter>Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Packets\Packets.h">
+      <Filter>Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Packets\RSP.h">
+      <Filter>Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="server.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\FireNET.rc" />
+  </ItemGroup>
+</Project>

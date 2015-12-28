@@ -1,0 +1,106 @@
+<Graph Description="" Group="MM_Display" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="76" Class="UI:Action:Start" pos="-1620,1080,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="308" Class="UI:Action:Control" pos="-840,1970,0" flags="0">
+   <Inputs uiActions_UIAction="sys_error" Strict="1" Args=""/>
+  </Node>
+  <Node Id="378" Class="UI:Action:Control" pos="-700,1390,0" flags="0">
+   <Inputs uiActions_UIAction="mm_displaymenu" Strict="1" Args=""/>
+  </Node>
+  <Node Id="404" Class="UI:Display:Display" pos="-210,1340,0" flags="0" InHideMask="1023" OutHideMask="255">
+   <Inputs uiElements_Element="Menu" instanceID="-1"/>
+  </Node>
+  <Node Id="416" Class="Logic:Any" pos="-1020,2000,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="422" Name="Get_and_show_errors" Class="_commentbox" pos="-1050,1898.4819,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="460" Height="140"/>
+   <NodeSize Width="460" Height="195.3644"/>
+  </Node>
+  <Node Id="425" Class="UI:Display:Display" pos="-1370,1030,0" flags="0">
+   <Inputs uiElements_Element="Menu" instanceID="-1"/>
+  </Node>
+  <Node Id="427" Class="UI:Events:Menu:LoginBtnPress" pos="-1640,1390,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="428" Class="UI:Events:Menu:RegBtnPress" pos="-1640,1670,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="429" Class="UI:Functions:Menu:HideLoginPage" pos="-1010,1350,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="434" Name="Logining" Class="_commentbox" pos="-1660,1270.8665,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1750" Height="210"/>
+   <NodeSize Width="1750" Height="265.36438"/>
+  </Node>
+  <Node Id="435" Name="Register" Class="_commentbox" pos="-1660,1590.9479,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="940" Height="200"/>
+   <NodeSize Width="940" Height="255.3644"/>
+  </Node>
+  <Node Id="436" Class="UI:Functions:Menu:ShowLoginPage" pos="-1000,1040,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="439" Name="Show_login_page" Class="_commentbox" pos="-1650,948.3623,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="940" Height="240"/>
+   <NodeSize Width="940" Height="295.36438"/>
+  </Node>
+  <Node Id="442" Class="UI:Functions:Menu:ShowRegisterResult" pos="-1000,1670,0" flags="0">
+   <Inputs instanceID="-1" Result="@register_success"/>
+  </Node>
+  <Node Id="443" Class="UI:Functions:Menu:ShowRegisterResult" pos="-1000,1750,0" flags="0">
+   <Inputs instanceID="-1" Result="@register_success"/>
+  </Node>
+  <Node Id="444" Class="UI:Functions:Menu:ShowLoginResult" pos="-1010,1410,0" flags="0">
+   <Inputs instanceID="-1" Result="@incorrect_password"/>
+  </Node>
+  <Node Id="447" Class="UI:Functions:Menu:ShowBackground" pos="-1000,1110,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+  <Node Id="449" Class="UI:Action:End" pos="-210,1410,0" flags="0">
+   <Inputs UseAsState="1" Args=""/>
+  </Node>
+  <Node Id="452" Class="Logic:Any" pos="-340,1400,0" flags="0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="453" Class="FireNet:MasterServer:SendLoginRequest" pos="-1330,1410,0" flags="0">
+   <Inputs Login="" Password=""/>
+  </Node>
+  <Node Id="454" Class="FireNet:MasterServer:SendRegisterRequest" pos="-1350,1680,0" flags="0">
+   <Inputs Login="" Password="" Nickname=""/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="425" nodeOut="76" portIn="show" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="452" nodeOut="308" portIn="in1" portOut="OnStart" enabled="1"/>
+  <Edge nodeIn="452" nodeOut="378" portIn="in2" portOut="OnStart" enabled="1"/>
+  <Edge nodeIn="449" nodeOut="404" portIn="EndAction" portOut="onUnload" enabled="1"/>
+  <Edge nodeIn="308" nodeOut="416" portIn="Args" portOut="out" enabled="1"/>
+  <Edge nodeIn="308" nodeOut="416" portIn="Start" portOut="out" enabled="1"/>
+  <Edge nodeIn="436" nodeOut="425" portIn="Call" portOut="onShow" enabled="1"/>
+  <Edge nodeIn="447" nodeOut="425" portIn="Call" portOut="onShow" enabled="1"/>
+  <Edge nodeIn="453" nodeOut="427" portIn="Login" portOut="Login" enabled="1"/>
+  <Edge nodeIn="453" nodeOut="427" portIn="Password" portOut="Password" enabled="1"/>
+  <Edge nodeIn="453" nodeOut="427" portIn="Send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="454" nodeOut="428" portIn="Login" portOut="Login" enabled="1"/>
+  <Edge nodeIn="454" nodeOut="428" portIn="Nickname" portOut="Nickname" enabled="1"/>
+  <Edge nodeIn="454" nodeOut="428" portIn="Password" portOut="Password" enabled="1"/>
+  <Edge nodeIn="454" nodeOut="428" portIn="Send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="378" nodeOut="429" portIn="Start" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="404" nodeOut="452" portIn="unload" portOut="out" enabled="1"/>
+  <Edge nodeIn="416" nodeOut="453" portIn="in1" portOut="Error" enabled="1"/>
+  <Edge nodeIn="429" nodeOut="453" portIn="Call" portOut="Success" enabled="1"/>
+  <Edge nodeIn="444" nodeOut="453" portIn="Call" portOut="Fail" enabled="1"/>
+  <Edge nodeIn="444" nodeOut="453" portIn="Result" portOut="Fail" enabled="1"/>
+  <Edge nodeIn="416" nodeOut="454" portIn="in2" portOut="Error" enabled="1"/>
+  <Edge nodeIn="442" nodeOut="454" portIn="Call" portOut="Success" enabled="1"/>
+  <Edge nodeIn="443" nodeOut="454" portIn="Call" portOut="Fail" enabled="1"/>
+  <Edge nodeIn="443" nodeOut="454" portIn="Result" portOut="Fail" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

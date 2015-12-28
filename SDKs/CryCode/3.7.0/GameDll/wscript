@@ -1,0 +1,23 @@
+#############################################################################
+## Crytek Source File
+## Copyright (C) 2013, Crytek Studios
+##
+## Creator: Christopher Bolte
+## Date: Oct 31, 2013
+## Description: WAF  based build system
+#############################################################################
+
+def build(bld):
+
+	bld.CryEngineModule(
+		target        = 'CryGameSDK',
+		vs_filter     = 'Projects/GameSDK',		
+		file_list     = 'gamedllsdk.waf_files', 
+
+		features      = 'durango_title_id',
+		pch           = 'StdAfx.cpp',
+		includes      = [ '.',  Path('Code/CryEngine/CryAction'), Path('Code/GameSDK/ESraLibCore/include') ],
+
+		win_lib       = [ 'shell32', 'Gdi32' ],
+
+	)
